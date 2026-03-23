@@ -19,7 +19,7 @@ public class Pelicula extends ContenidoMultimedia {
     }
     @Override
     public void iniciarReproduccion(){
-        System.out.println("Cargabdo video y ajustando subtitulos para la pelicula...");
+        System.out.println("Cargando video y ajustando subtitulos para la pelicula...");
     }
     
     public void configurarVisualizacion(){

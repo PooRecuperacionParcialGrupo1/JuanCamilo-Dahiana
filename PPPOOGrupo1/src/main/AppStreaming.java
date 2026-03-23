@@ -44,7 +44,7 @@ public class AppStreaming {
         if(!podcast.contains(po3)){
             podcast.add(po3);
         }
-        Podcast po4=new Podcast("Sol Loaiza", "No son ellos, eres tú", 40, 2022);
+        Podcast po4=new Podcast("Sol Loaiza", "No son ellos, eres tu", 40, 2022);
         if(!podcast.contains(po4)){
             podcast.add(po4);
         }
