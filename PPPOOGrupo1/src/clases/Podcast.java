@@ -17,7 +17,7 @@ public class Podcast extends ContenidoMultimedia {
     }
     @Override
     public void iniciarReproduccion(){
-        System.out.println("Conectando al servidpor de audio y preparando el episodio del podcast...");
+        System.out.println("Conectando al servidor de audio y preparando el episodio del podcast...");
     }
     
 }

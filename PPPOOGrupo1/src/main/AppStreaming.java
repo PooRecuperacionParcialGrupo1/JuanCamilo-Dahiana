@@ -24,7 +24,7 @@ public class AppStreaming {
         if(!peliculas.contains(p2)){
             peliculas.add(p2);
         }
-        Pelicula p3=new Pelicula("Trinidad Velez", "Aun así", 60, 2010);
+        Pelicula p3=new Pelicula("Trinidad Velez", "Aun asi", 60, 2010);
         if(!peliculas.contains(p3)){
             peliculas.add(p3);
         }
@@ -57,6 +57,12 @@ public class AppStreaming {
             System.out.println(d.obtenerResumen());
             d.iniciarReproduccion();
         }
-    }
+        for(Pelicula p : peliculas){
+            System.out.println("Pelicula "+p.titulo);
+            p.configurarVisualizacion();
+            p.configurarVisualizacion("4k");
+            p.configurarVisualizacion("1080p", "ingles");
+        }
 
+    }
 }
