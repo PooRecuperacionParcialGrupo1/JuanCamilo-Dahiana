@@ -48,6 +48,15 @@ public class AppStreaming {
         if(!podcast.contains(po4)){
             podcast.add(po4);
         }
+        
+        for(Pelicula p : peliculas){
+            System.out.println(p.obtenerResumen());
+            p.iniciarReproduccion();
+        }
+        for(Podcast d : podcast){
+            System.out.println(d.obtenerResumen());
+            d.iniciarReproduccion();
+        }
     }
-    
+
 }
