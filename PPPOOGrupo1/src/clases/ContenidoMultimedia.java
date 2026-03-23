@@ -18,7 +18,7 @@ public abstract class ContenidoMultimedia {
     public abstract void iniciarReproduccion();
     
     public String obtenerResumen(){
-        return "ContenidoMultimedia{" + "titulo=" + titulo + ", anioLanzamiento=" + anioLanzamiento + '}';
+        return "titulo:" + titulo + ", anio de Lanzamiento:" + anioLanzamiento;
 
     }
 
@@ -48,11 +48,10 @@ public abstract class ContenidoMultimedia {
             return false;
         }
         final ContenidoMultimedia other = (ContenidoMultimedia) obj;
-        return Objects.equals(this.titulo, other.titulo);
+        return this.titulo.equalsIgnoreCase(other.titulo);
+    
+    
     }
-    
-    
-    
     
     
 }

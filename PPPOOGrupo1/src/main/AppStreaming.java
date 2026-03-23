@@ -48,20 +48,25 @@ public class AppStreaming {
         if(!podcast.contains(po4)){
             podcast.add(po4);
         }
-        
+        System.out.println("\nRESUMEN Y REPRODUCCION...\n");
         for(Pelicula p : peliculas){
             System.out.println(p.obtenerResumen());
             p.iniciarReproduccion();
+            System.out.println();
         }
         for(Podcast d : podcast){
             System.out.println(d.obtenerResumen());
             d.iniciarReproduccion();
+            System.out.println();
         }
+        System.out.println("\nCONFIGURACION DE PELICULAS...\n");
         for(Pelicula p : peliculas){
             System.out.println("Pelicula "+p.titulo);
             p.configurarVisualizacion();
             p.configurarVisualizacion("4k");
             p.configurarVisualizacion("1080p", "ingles");
+            
+            System.out.println();
         }
 
     }
