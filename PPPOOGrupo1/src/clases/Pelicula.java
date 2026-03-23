@@ -9,7 +9,7 @@ package clases;
  * @author koomi
  */
 public class Pelicula extends ContenidoMultimedia {
-    String director;
+    public String director;
     public String artCalidad;
     public String idiomaSubtitulos;
 

@@ -9,7 +9,7 @@ package clases;
  * @author koomi
  */
 public class Podcast extends ContenidoMultimedia {
-    String anfitrion;
+    public String anfitrion;
 
     public Podcast(String anfitrion, String titulo, int duracionMinutos, int anioLanzamiento) {
         super(titulo, duracionMinutos, anioLanzamiento);

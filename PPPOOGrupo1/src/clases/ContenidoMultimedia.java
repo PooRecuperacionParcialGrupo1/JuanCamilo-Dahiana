@@ -4,6 +4,8 @@
  */
 package clases;
 
+import java.util.Objects;
+
 /**
  *
  * @author camil
@@ -24,7 +26,33 @@ public abstract class ContenidoMultimedia {
         this.titulo = titulo;
         this.duracionMinutos = duracionMinutos;
         this.anioLanzamiento = anioLanzamiento;
+        
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 79 * hash + Objects.hashCode(this.titulo);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final ContenidoMultimedia other = (ContenidoMultimedia) obj;
+        return Objects.equals(this.titulo, other.titulo);
+    }
+    
+    
+    
     
     
 }
